@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes","u":"allclasses-index.html"},{"p":"webapp.springboot.employeesalary.persistent.entity","l":"Employee"}];updateSearchResults();
