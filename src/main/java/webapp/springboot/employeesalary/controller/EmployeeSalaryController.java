@@ -159,10 +159,8 @@ public class EmployeeSalaryController {
     @GetMapping("/{id}")
     public ResponseEntity<String> getUserById(@PathVariable("id") String id) {
         Optional<Employee> employee = repository.findById(id);
-        if (employee.isPresent()) {
-            return createJSONResponse(OK,employeeToJSON(employee.get()));
-        }
-        return createSimpleJSONResponse(BAD_REQUEST,"No such employee");
+        return employee.map(value -> createJSONResponse(OK, employeeToJSON(value))).orElseGet(
+                () -> createSimpleJSONResponse(BAD_REQUEST, "No such employee"));
     }
 
     /**
