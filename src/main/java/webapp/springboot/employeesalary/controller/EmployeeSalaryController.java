@@ -155,6 +155,7 @@ public class EmployeeSalaryController {
      * @param id the employee id the search
      * @return http response
      */
+    
     @GetMapping("/{id}")
     public ResponseEntity<String> getUserById(@PathVariable("id") String id) {
         Optional<Employee> employee = repository.findById(id);
