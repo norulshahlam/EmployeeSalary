@@ -142,7 +142,6 @@ public class EmployeeSalaryController {
         else if (!"".equals(sortBy) && Arrays.binarySearch(SORT_COLUMNS,sortBy) < 0) {
             return createSimpleJSONResponse(BAD_REQUEST,"Currently sort by '"+sortBy+"' is not available");
         }
-
         List<Employee> employees = repository.fetchEmployee(minSalary, maxSalary, offset, limit,sortBy,ascending==1);
         return createJSONResponse(OK,employeeListToJSON(employees));
     }
