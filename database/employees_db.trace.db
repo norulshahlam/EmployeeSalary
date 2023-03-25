@@ -121,7 +121,7 @@ org.h2.message.DbException: General error: "java.lang.IllegalStateException: The
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1309)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1298)
-	at webapp.springboot.employeesalary.EmployeesalaryApplication.main(EmployeesalaryApplication.java:10)
+	at webapp.springboot.employeesalary.Application.main(EmployeesalaryApplication.java:10)
 Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/P0103893/Documents/workspace-spring-tool-suite-4-4.9.0.RELEASE/EmployeeSalary/database/employees_db.mv.db [1.4.200/7]" [50000-200]
 	at org.h2.message.DbException.getJdbcSQLException(DbException.java:505)
 	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)

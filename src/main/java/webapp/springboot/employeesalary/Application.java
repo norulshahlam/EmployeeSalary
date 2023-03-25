@@ -7,10 +7,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @author NORUL
  */
 @SpringBootApplication
-public class EmployeesalaryApplication {
+public class Application {
 	
 	public static void main(String[] args) {
-		SpringApplication.run(EmployeesalaryApplication.class, args);
+		SpringApplication.run(Application.class, args);
 	}
 
 }
